@@ -57,48 +57,19 @@ Below is the conceptual architecture for the real-time pipeline:
 - **Analytics-ready Power BI dashboards**  
 
 ---
-
+```
 ## 📂 Repository Structure
 
 real-time-stocks-mds/
-│
-├── consumer/
-│   ├── consumer.py
-│
-├── producer/
-│   ├── producer.py
-│
-├── dag/
-│   └── minio_to_snowflake.py
-|
-├── images/
-│   ├── REAL-TIME-STOCKS-MDS-ARCHITECTURE.png
-│   └── REAL-TIME-MDS-POWERBI.png
-│
-├── dbt_stocks/
-│   ├── dbt_project.yml
-│   ├── profiles.yml
-│   ├── models/
-│   │   ├── bronze/
-│   │   ├── silver/
-│   │   └── gold/
-│   └── tests/
-│
-├── silver/
-│   ├── transformations.sql
-│   └── data_quality_checks.sql
-│
-├── gold/
-│   ├── fact_stock_prices.sql
-│   └── dim_companies.sql
-│
-├── airflow_initial.txt
-├── docker-compose.yml
-├── requirements.txt
-├── README.md
-└── LICENSE
+├── consumer/           # Kafka consumer logic
+├── producer/           # Finnhub API producer logic
+├── dag/                # Airflow DAG definitions
+├── dbt_stocks/         # dbt models (Bronze, Silver, Gold)
+├── images/             # Documentation assets
+├── docker-compose.yml  # Infrastructure as Code
+└── requirements.txt    # Python dependencies
 
-
+```
 
 ---
 
@@ -112,7 +83,7 @@ real-time-stocks-mds/
 - Power BI Desktop  
 
 ---
-
+```
 ### Setup Steps
 
 1. **Clone the Repository**
@@ -148,7 +119,8 @@ Trigger DAG: minio_to_snowflake
 Loads data from MinIO into Snowflake Bronze tables
 
 Scheduled every 1 minute
-
+```
+---
 ⚙️ Step-by-Step Implementation
 1️⃣ Kafka Setup
 Kafka configured locally using Docker
