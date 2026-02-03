@@ -213,7 +213,7 @@ Implement CI/CD pipelines for DBT models using GitHub Actions to automate testin
 
 Alerting & Monitoring
 Add monitoring and alerting using tools like Prometheus, Grafana, or Airflow alerts to track pipeline health, detect failures, and ensure high availability of real-time data processing.
----
+
 ### 🧠 Key Learnings
 Real-time streaming architecture design
 
@@ -224,10 +224,9 @@ Orchestrating pipelines using Airflow
 DBT best practices for analytics engineering
 
 Building scalable cloud data warehouses.
----
 
 ⭐ If you like this project, don’t forget to star the repository!
-----
+
 
 ### 🔗 Connect With Me
 [linkedin]: [https://www.linkedin.com/in/mohd-akram-6a210a259/]
